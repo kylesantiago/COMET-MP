@@ -82,7 +82,7 @@ class Student:
             print(str(self.course[x].code) + ":" + str(self.grades[self.course[x]]))
             y += calc(self.course[x].unit,self.grades[self.course[x]],multiply)
             z += self.course[x].unit
-        print("GPA: " + str(calc(y,z,divide)))
+        print("GPA: %.2f" %(calc(y,z,divide)))
            
 #setCode checks if the code is 7 characters
 def setCode (code):
